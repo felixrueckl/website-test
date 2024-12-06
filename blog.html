@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog - My Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 40px auto;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+        header {
+            margin-bottom: 2rem;
+        }
+        nav {
+            margin-bottom: 2rem;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin-right: 1rem;
+        }
+        .article-preview {
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1rem;
+        }
+        .article-meta {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        .tags span {
+            background: #eee;
+            padding: 0.2rem 0.5rem;
+            border-radius: 3px;
+            margin-right: 0.5rem;
+            font-size: 0.8rem;
+        }
+        .featured {
+            background: #f9f9f9;
+            padding: 1rem;
+            border-radius: 5px;
+            margin-bottom: 2rem;
+        }
+        .read-more {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .read-more:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="blog.html">Blog</a>
+        </nav>
+    </header>
+
+    <section class="featured">
+        <h2>Featured Article</h2>
+        <article>
+            <h3>Getting Started with Web Development</h3>
+            <div class="article-meta">Posted on December 5, 2024</div>
+            <img src="/api/placeholder/800/400" alt="Web Development" />
+            <p>Learn the essential steps to begin your journey in web development. From HTML basics to advanced JavaScript frameworks...</p>
+            <div class="tags">
+                <span>Web Development</span>
+                <span>Beginners</span>
+                <span>Tutorial</span>
+            </div>
+            <a href="#" class="read-more">Read more →</a>
+        </article>
+    </section>
+
+    <section>
+        <h2>Recent Articles</h2>
+        <article class="article-preview">
+            <h3>CSS Best Practices</h3>
+            <div class="article-meta">Posted on December 4, 2024</div>
+            <img src="/api/placeholder/800/300" alt="CSS Code" />
+            <p>Discover the most effective CSS practices for maintainable and scalable stylesheets...</p>
+            <div class="tags">
+                <span>CSS</span>
+                <span>Best Practices</span>
+            </div>
+            <a href="#" class="read-more">Read more →</a>
+        </article>
+
+        <article class="article-preview">
+            <h3>JavaScript Tips and Tricks</h3>
+            <div class="article-meta">Posted on December 3, 2024</div>
+            <img src="/api/placeholder/800/300" alt="JavaScript Code" />
+            <p>Enhance your JavaScript skills with these advanced techniques and patterns...</p>
+            <div class="tags">
+                <span>JavaScript</span>
+                <span>Advanced</span>
+            </div>
+            <a href="#" class="read-more">Read more →</a>
+        </article>
+    </section>
+</body>
+</html>
