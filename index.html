@@ -2,55 +2,91 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 40px auto;
-            max-width: 800px;
-            padding: 0 20px;
-        }
-        h1, h2 {
-            color: #333;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-        }
-        p {
-            color: #666;
-        }
-        .social-links {
-            list-style: none;
-            padding: 0;
-        }
-        .social-links li {
-            margin: 10px 0;
-        }
-        .social-links a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-        .social-links a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felix Rückl - Web Developer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is a simple website to demonstrate GitHub deployment.</p>
-    
-    <h2>About Me</h2>
-    <p>I'm a web developer passionate about creating clean, functional websites. This is a demo site showcasing my GitHub workflow.</p>
-    
-    <h2>Contact</h2>
-    <p>Email: example@domain.com<br>
-Phone: (555) 123-4567</p>
-    
-    <h2>Social Media</h2>
-    <ul class="social-links">
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">LinkedIn</a></li>
-        <li><a href="#">GitHub</a></li>
-    </ul>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Felix Rückl</h1>
+            <h2>Full-Stack Web Developer</h2>
+            <p>Creating beautiful, functional, and user-friendly web experiences</p>
+        </section>
+
+        <section class="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello! I'm a passionate web developer with expertise in modern web technologies. I specialize in creating responsive, efficient, and elegant web solutions that help businesses grow their digital presence.</p>
+                    <p>My technical toolkit includes:</p>
+                    <ul class="skills-list">
+                        <li>HTML5, CSS3, JavaScript (ES6+)</li>
+                        <li>React.js & Node.js</li>
+                        <li>Responsive Web Design</li>
+                        <li>UI/UX Best Practices</li>
+                        <li>Performance Optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-work">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>E-Commerce Platform</h3>
+                    <p>A full-featured online store with cart functionality and payment integration</p>
+                    <a href="portfolio.html" class="button">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>A responsive portfolio website showcasing creative work and achievements</p>
+                    <a href="portfolio.html" class="button">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Task Management App</h3>
+                    <p>A productivity tool for managing tasks and collaborating with teams</p>
+                    <a href="portfolio.html" class="button">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="latest-posts">
+            <h2>Latest Blog Posts</h2>
+            <div class="post-grid">
+                <article class="post-card">
+                    <h3>The Future of Web Development</h3>
+                    <p>Exploring upcoming trends and technologies in web development...</p>
+                    <a href="blog.html" class="button">Read More</a>
+                </article>
+                <article class="post-card">
+                    <h3>Optimizing Website Performance</h3>
+                    <p>Tips and techniques for improving your website's speed and efficiency...</p>
+                    <a href="blog.html" class="button">Read More</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/felixrueckl" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/felixrueckl" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com/felixrueckl" target="_blank">Twitter</a>
+        </div>
+        <p>&copy; 2024 Felix Rückl. All rights reserved.</p>
+    </footer>
 </body>
 </html>
