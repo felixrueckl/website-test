@@ -1,1 +1,36 @@
-Jy1jbGllbnQnOwoKaW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJzsKaW1wb3J0IHsgdXNlUGF0aG5hbWUgfSBmcm9tICduZXh0L25hdmlnYXRpb24nOwoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gTmF2aWdhdGlvbigpIHsKICBjb25zdCBwYXRobmFtZSA9IHVzZVBhdGhuYW1lKCk7CgogIGNvbnN0IG5hdkl0ZW1zID0gWwogICAgeyBocmVmOiAnLycsIGxhYmVsOiAnSG9tZScgfSwKICAgIHsgaHJlZjogJy9wb3J0Zm9saW8nLCBsYWJlbDogJ1BvcnRmb2xpbycgfSwKICAgIHsgaHJlZjogJy9ibG9nJywgbGFiZWw6ICdCbG9nJyB9LAogICAgeyBocmVmOiAnL2NvbnRhY3QnLCBsYWJlbDogJ0NvbnRhY3QnIH0sCiAgXTsKCiAgcmV0dXJuICgKICAgIDxuYXYgY2xhc3NOYW1lPSJiZy1ncmF5LTgwMCB0ZXh0LXdoaXRlIHAtNCBzdGlja3kgdG9wLTAgei01MCI+CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJjb250YWluZXIgbXgtYXV0byI+CiAgICAgICAgPHVsIGNsYXNzTmFtZT0iZmxleCBzcGFjZS14LTYiPgogICAgICAgICAge25hdkl0ZW1zLm1hcCgoaXRlbSkgPT4gKAogICAgICAgICAgICA8bGkga2V5PXtpdGVtLmhyZWZ9PgogICAgICAgICAgICAgIDxMaW5rCiAgICAgICAgICAgICAgICBocmVmPXtpdGVtLmhyZWZ9CiAgICAgICAgICAgICAgICBjbGFzc05hbWU9e2Bob3Zlcjp0ZXh0LWdyYXktMzAwIHRyYW5zaXRpb24tY29sb3JzICR7CiAgICAgICAgICAgICAgICAgIHBhdGhuYW1lID09PSBpdGVtLmhyZWYgPyAndGV4dC1ibHVlLTQwMCcgOiAnJwogICAgICAgICAgICAgICAgfWB9CiAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAge2l0ZW0ubGFiZWx9CiAgICAgICAgICAgICAgPC9MaW5rPgogICAgICAgICAgICA8L2xpPgogICAgICAgICAgKSl9CiAgICAgICAgPC91bD4KICAgICAgPC9kaXY+CiAgICA8L25hdj4KICApOwp9
+'use client';
+
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+
+export default function Navigation() {
+  const pathname = usePathname();
+
+  const navItems = [
+    { href: '/', label: 'Home' },
+    { href: '/portfolio', label: 'Portfolio' },
+    { href: '/blog', label: 'Blog' },
+    { href: '/contact', label: 'Contact' },
+  ];
+
+  return (
+    <nav className="bg-gray-800 text-white p-4 sticky top-0 z-50">
+      <div className="container mx-auto">
+        <ul className="flex space-x-6">
+          {navItems.map((item) => (
+            <li key={item.href}>
+              <Link
+                href={item.href}
+                className={`hover:text-gray-300 transition-colors ${
+                  pathname === item.href ? 'text-blue-400' : ''
+                }`}
+              >
+                {item.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </nav>
+  );
+}
