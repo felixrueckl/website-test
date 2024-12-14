@@ -2,107 +2,101 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Blog - My Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 40px auto;
-            max-width: 800px;
-            padding: 0 20px;
-        }
-        header {
-            margin-bottom: 2rem;
-        }
-        nav {
-            margin-bottom: 2rem;
-        }
-        nav a {
-            color: #333;
-            text-decoration: none;
-            margin-right: 1rem;
-        }
-        .article-preview {
-            margin-bottom: 2rem;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 1rem;
-        }
-        .article-meta {
-            color: #666;
-            font-size: 0.9rem;
-        }
-        .tags span {
-            background: #eee;
-            padding: 0.2rem 0.5rem;
-            border-radius: 3px;
-            margin-right: 0.5rem;
-            font-size: 0.8rem;
-        }
-        .featured {
-            background: #f9f9f9;
-            padding: 1rem;
-            border-radius: 5px;
-            margin-bottom: 2rem;
-        }
-        .read-more {
-            color: #0066cc;
-            text-decoration: none;
-        }
-        .read-more:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>Blog - Felix Rückl</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Blog</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="blog.html">Blog</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <section class="featured">
-        <h2>Featured Article</h2>
-        <article>
-            <h3>Getting Started with Web Development</h3>
-            <div class="article-meta">Posted on December 5, 2024</div>
-            <img src="/api/placeholder/800/400" alt="Web Development" />
-            <p>Learn the essential steps to begin your journey in web development. From HTML basics to advanced JavaScript frameworks...</p>
-            <div class="tags">
-                <span>Web Development</span>
-                <span>Beginners</span>
-                <span>Tutorial</span>
-            </div>
-            <a href="#" class="read-more">Read more →</a>
-        </article>
-    </section>
+    <main>
+        <section class="blog-header">
+            <h1>Web Development Insights</h1>
+            <p>Exploring the latest trends, best practices, and innovations in web development</p>
+        </section>
 
-    <section>
-        <h2>Recent Articles</h2>
-        <article class="article-preview">
-            <h3>CSS Best Practices</h3>
-            <div class="article-meta">Posted on December 4, 2024</div>
-            <img src="/api/placeholder/800/300" alt="CSS Code" />
-            <p>Discover the most effective CSS practices for maintainable and scalable stylesheets...</p>
-            <div class="tags">
-                <span>CSS</span>
-                <span>Best Practices</span>
-            </div>
-            <a href="#" class="read-more">Read more →</a>
-        </article>
+        <section class="featured-post">
+            <h2>Featured Article</h2>
+            <article>
+                <h3>The Rise of AI in Web Development: A 2024 Perspective</h3>
+                <div class="article-meta">Posted on December 12, 2024 · 10 min read</div>
+                <img src="/api/placeholder/800/400" alt="AI in Web Development" />
+                <p>Artificial Intelligence is revolutionizing how we build and maintain websites. From automated testing to intelligent code completion, AI tools are becoming an integral part of the modern developer's toolkit. In this comprehensive guide, we'll explore:</p>
+                <ul>
+                    <li>How AI is transforming the web development landscape</li>
+                    <li>Popular AI-powered development tools in 2024</li>
+                    <li>Practical applications of AI in everyday development tasks</li>
+                    <li>Future predictions and preparing for AI integration</li>
+                </ul>
+                <div class="tags">
+                    <span>Artificial Intelligence</span>
+                    <span>Web Development</span>
+                    <span>Technology Trends</span>
+                </div>
+                <a href="#" class="button">Read full article →</a>
+            </article>
+        </section>
 
-        <article class="article-preview">
-            <h3>JavaScript Tips and Tricks</h3>
-            <div class="article-meta">Posted on December 3, 2024</div>
-            <img src="/api/placeholder/800/300" alt="JavaScript Code" />
-            <p>Enhance your JavaScript skills with these advanced techniques and patterns...</p>
-            <div class="tags">
-                <span>JavaScript</span>
-                <span>Advanced</span>
+        <section class="recent-posts">
+            <h2>Recent Articles</h2>
+            <div class="post-grid">
+                <article class="post-card">
+                    <h3>Mastering Modern CSS: The Power of CSS Grid and Flexbox</h3>
+                    <div class="article-meta">December 10, 2024 · 8 min read</div>
+                    <img src="/api/placeholder/800/300" alt="CSS Grid and Flexbox" />
+                    <p>Deep dive into advanced layout techniques using CSS Grid and Flexbox. Learn how to create responsive, dynamic layouts that adapt to any screen size. Includes practical examples and best practices for modern web design.</p>
+                    <div class="tags">
+                        <span>CSS</span>
+                        <span>Web Design</span>
+                        <span>Responsive</span>
+                    </div>
+                    <a href="#" class="button">Read More →</a>
+                </article>
+
+                <article class="post-card">
+                    <h3>Performance Optimization: Speed Up Your React Applications</h3>
+                    <div class="article-meta">December 8, 2024 · 12 min read</div>
+                    <img src="/api/placeholder/800/300" alt="React Performance" />
+                    <p>Discover advanced techniques for optimizing React applications. From code splitting to memory management, learn how to build lightning-fast web applications that users will love.</p>
+                    <div class="tags">
+                        <span>React</span>
+                        <span>Performance</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <a href="#" class="button">Read More →</a>
+                </article>
+
+                <article class="post-card">
+                    <h3>Building Secure Web Applications: A Complete Guide</h3>
+                    <div class="article-meta">December 6, 2024 · 15 min read</div>
+                    <img src="/api/placeholder/800/300" alt="Web Security" />
+                    <p>Security is crucial in modern web development. Learn about common vulnerabilities, best practices for secure coding, and how to implement robust security measures in your web applications.</p>
+                    <div class="tags">
+                        <span>Security</span>
+                        <span>Best Practices</span>
+                        <span>Web Development</span>
+                    </div>
+                    <a href="#" class="button">Read More →</a>
+                </article>
             </div>
-            <a href="#" class="read-more">Read more →</a>
-        </article>
-    </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/felixrueckl" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/felixrueckl" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com/felixrueckl" target="_blank">Twitter</a>
+        </div>
+        <p>&copy; 2024 Felix Rückl. All rights reserved.</p>
+    </footer>
 </body>
 </html>
